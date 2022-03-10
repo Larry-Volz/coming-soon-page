@@ -9,6 +9,11 @@ body, html {
 
     }
 
+.all-content-container {
+    max-width: 400px;
+    margin: auto;
+}
+
 #logo {
     /* images are inline by default so switching to block automatically makes it so it will go to 2nd line */
     display: block; 
@@ -34,7 +39,7 @@ body, html {
     background-size: cover;
 }
 
-.all-content-container {
+.all-text-container {
     width 100%;
 
     /* ask what's in common?  They are all centered */
