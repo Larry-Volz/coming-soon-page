@@ -1,0 +1,58 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color: gray;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+
+
+/* MY 1ST ATTEMPT */
+
+.logo-bar, .hero-pic {
+    display: flex;
+    justify-content: center;
+    margin: .8rem;
+    /* flex-basis: 376px; */
+}
+
+.text-and-forms {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.text-and-forms p {
+    width: 376px;
+    flex-basis: 376px
+}
+
+h1 .h1 {
+    display: flex;
+    justify-content: center;
+    /* size: 376px;
+    flex-basis: 376px; */
+
+}
+
+h1 .h1:first-of-type {
+    color: #CD3A24;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        width: 376px;
+        height: 250px;
+    }
+}
