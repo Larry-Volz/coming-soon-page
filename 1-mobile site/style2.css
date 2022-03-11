@@ -1,0 +1,119 @@
+body, html {
+    /* use full page */
+    min-width: 100%;
+    min-height: 100vh;
+
+    /* so photos will go to the edge */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    display: flex;
+
+    }
+
+.all-content-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#logo {
+    /* images are inline by default so switching to block automatically makes it so it will go to 2nd line */
+    display: block; 
+
+    /* to center it */
+    margin: 15px auto;
+
+}
+
+/* Use a div with a background image because when you re-size it looks better and easier to get to size you want */
+
+#athlete-mobile {
+    /* make block-level element fill all remaining space in it's parent */
+    width: 100%;
+
+    /* better to do a fixed height on an image than a percentage */
+    height: 250px;
+
+    /* use background shorthand: color, url, repeat right top */
+    background: blue url("img/hero-img.png") no-repeat center top;
+
+    /* make image fit the whole div and resize with it (affects aspect ratio) */
+    background-size: cover;
+}
+
+.all-text-container {
+    width 100%;
+
+    /* ask what's in common?  They are all centered */
+    text-align: center;
+    
+    padding: 20px 30px;
+
+}
+
+h2, p {
+    margin: 0px;
+}
+
+h2 {
+    /* vertically words were too spread out so clear it out with... */
+    margin: 0px;
+
+    /* again ask what the h2 words have in common... */
+
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+/* could do .red or .grey or... */
+h2:nth-of-type(1) {
+    color: #CD3A24;
+    /* margin-bottom: 5px; */
+}
+
+h2:nth-of-type(2) {
+    color: #423A3A;
+}
+
+p {
+    margin-top: 20px ;
+    margin-bottom: 20px;
+    line-height: 28px; /* from specs */
+    color: #333333;
+}
+
+form {
+    /* there was a space between email addy box and button to so make then scrunch up and touch */
+    display: flex;
+}
+
+/* the email input box */
+input[type="email"] {
+    width: 75%;
+    height: 40px;
+
+    /* to move placeholder over a bit*/
+    padding: 0 20px;
+
+    /* heights looked different between email text entry area and submit box so... */
+    box-sizing: border-box;
+}
+
+/* the submit button.  Best practice to use submit rather than button to keep form connected to button */
+input[type="submit"]{
+    width: 20%;
+    height: 40px;
+
+    /* heights looked different between email text entry area and submit box so... */
+    box-sizing: border-box;
+
+    background-color: black;
+    color:white;
+
+    font-weight: 700;
+    font-size: 18px;
+}
+
