@@ -115,7 +115,8 @@ input[type="email"] {
 input[type="submit"]{
     width: 20%;
     height: 40px;
-
+    background: rgb(157,156,162);
+    background: linear-gradient(90deg, rgba(157,156,162,1) 0%, rgba(0,0,0,1) 100%);
     /* heights looked different between email text entry area and submit box so... */
     box-sizing: border-box;
 
