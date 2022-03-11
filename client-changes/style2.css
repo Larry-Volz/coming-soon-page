@@ -44,7 +44,7 @@ body {
     height: 250px;
 
     /* use background shorthand: color, url, repeat right top */
-    background: blue url("img/hero-img.png") no-repeat center top;
+    background: blue url("img/sneaker.jpg") no-repeat center top;
 
     /* make image fit the whole div and resize with it (affects aspect ratio) */
     background-size: cover;
@@ -79,7 +79,7 @@ h2 {
 
 /* could do .red or .grey or... */
 h2:nth-of-type(1) {
-    color: #CD3A24;
+    color: #2F80ED;
     /* margin-bottom: 5px; */
 }
 
@@ -146,10 +146,10 @@ input[type="submit"]{
     }
 
     .desktop-image {
-        background: url("img/hero-img.png") no-repeat right;
+        background: url("img/sneaker.jpg") no-repeat right;
         background-size: cover;
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%);
-        width: 50%;
+        /* clip-path: polygon(0 0, 100% 0, 100% 100%, 38% 100%); */
+        width: 40%;
         /* question: works with block or flex?  why? */
         display: block;
     }
@@ -160,5 +160,9 @@ input[type="submit"]{
 
     .text-content-container {
         text-align: left;
+    }
+
+    h2 {
+        font-size: 64px;
     }
 }
